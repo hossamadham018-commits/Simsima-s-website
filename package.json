@@ -1,0 +1,11 @@
+{
+  "name": "home-katering",
+  "version": "1.0.0",
+  "description": "Home food catering platform",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:dashboard": "cd dashboard && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../dashboard && npm install"
+  }
+}

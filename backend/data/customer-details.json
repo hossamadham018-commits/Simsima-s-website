@@ -1,0 +1,64 @@
+{
+  "updatedAt": "2026-09-14T15:23:54.007Z",
+  "customers": [
+    {
+      "customerId": 2,
+      "name": "Adham Hossam",
+      "email": "hossamadham018@gmail.com",
+      "phone": "0102492020",
+      "role": "customer",
+      "totalOrders": 1,
+      "completedOrders": 1,
+      "cancelledOrders": 0,
+      "pendingOrders": 0,
+      "processingOrders": 0,
+      "totalSpent": 25000,
+      "averageOrderValue": 25000,
+      "averageMonthlySpend": 25000,
+      "activeMonths": 1,
+      "orderFrequencyDays": null,
+      "firstOrderAt": "2026-09-14T15:19:52.925Z",
+      "latestOrderAt": "2026-09-14T15:19:52.925Z",
+      "daysSinceLastOrder": 0,
+      "segment": "New",
+      "deliveryAddresses": [],
+      "favoriteItems": [
+        {
+          "id": 1,
+          "name": "Nasi Goreng Special",
+          "nameAr": "أرز مقلي خاص",
+          "quantity": 1,
+          "revenue": 25000
+        }
+      ],
+      "monthlyBreakdown": [
+        {
+          "month": "2026-09",
+          "total": 25000
+        }
+      ],
+      "recentOrders": [
+        {
+          "id": 1,
+          "total": 25000,
+          "status": "completed",
+          "createdAt": "2026-09-14T15:19:52.925Z",
+          "deliveryAddress": "",
+          "items": [
+            {
+              "id": 1,
+              "name": "Nasi Goreng Special",
+              "nameAr": "أرز مقلي خاص",
+              "price": 25000,
+              "category": "main",
+              "image": "/images/nasi-goreng.jpg",
+              "description": "Fried rice with chicken and vegetables",
+              "descriptionAr": "أرز مقلي مع الدجاج والخضروات",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

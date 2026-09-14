@@ -1,0 +1,59 @@
+.kitchen-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(110deg, rgba(38, 59, 33, .98), rgba(65, 91, 55, .97));
+  border-bottom: 1px solid rgba(249, 202, 61, .3);
+  box-shadow: 0 6px 24px rgba(20, 35, 17, .16);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.kitchen-nav-inner {
+  max-width: 1400px;
+  min-height: 82px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.kitchen-nav .kitchen-brand { display: inline-flex; align-items: center; gap: .8rem; flex-shrink: 0; text-decoration: none; }
+.kitchen-brand img { display: block; object-fit: cover; border-radius: 14px; border: 1px solid rgba(249, 202, 61, .45); box-shadow: 0 3px 12px #17271130; }
+.kitchen-wordmark { display: flex; flex-direction: column; gap: .2rem; }
+.kitchen-wordmark > span { color: #f9d36b; font-family: 'Playfair Display', serif; font-size: 1.5rem; line-height: 1.15; font-weight: 800; }
+.kitchen-wordmark small { color: #e3e9de; font-size: .75rem; line-height: 1.3; letter-spacing: .14em; text-transform: uppercase; }
+.kitchen-nav .kitchen-links { display: flex; align-items: center; gap: .4rem; list-style: none; margin: 0; padding: 0; }
+.kitchen-nav .kitchen-link, .kitchen-language, .kitchen-menu-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 44px; padding: .65rem 1rem; border-radius: 12px; border: 1px solid transparent;
+  background: transparent; color: #f0f3ec; font: 600 .875rem/1.4 'Inter', sans-serif;
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  transition: background .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.kitchen-nav svg { flex-shrink: 0; }
+.kitchen-nav .kitchen-link:hover, .kitchen-language:hover, .kitchen-menu-toggle:hover { background: rgba(255,255,255,.08); color: #ffe08a; }
+.kitchen-nav .kitchen-link.active { background: rgba(249,202,61,.12); color: #ffe08a; border-color: rgba(249,202,61,.25); }
+.kitchen-nav .kitchen-deals { color: #f9d36b; }
+.kitchen-nav .kitchen-account { margin-inline-start: .4rem; background: linear-gradient(135deg, #f9d46a, #edbe38); color: #283e23; padding-inline: 1.4rem; box-shadow: 0 3px 10px #15220f24; }
+.kitchen-nav .kitchen-account:hover, .kitchen-nav .kitchen-account.active { background: #ffdf80; color: #20341c; border-color: #ffe8a8; }
+.kitchen-language-item { margin-inline-start: .65rem; padding-inline-start: .8rem; border-inline-start: 1px solid #ffffff24; }
+.kitchen-language { padding-inline: .65rem; font-weight: 500; }
+.kitchen-cart-count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding-inline: 5px; border-radius: 99px; background: #f9ca3d; color: #283e23; font-size: .75rem; font-weight: 700; }
+.kitchen-nav :is(a, button):focus-visible { outline: 2px solid #ffe08a; outline-offset: 4px; }
+.kitchen-nav .kitchen-menu-toggle { display: none; padding: .65rem; border-color: #ffffff30; }
+@media (max-width: 1050px) {
+  .kitchen-nav-inner { min-height: 76px; padding-block: 14px; gap: 1rem; flex-wrap: wrap; }
+  .kitchen-nav .kitchen-menu-toggle { display: inline-flex; }
+  .kitchen-nav .kitchen-links { display: none; }
+  .kitchen-nav .kitchen-links.is-open { display: flex; width: 100%; flex-direction: column; align-items: stretch; gap: .4rem; padding: .85rem 0 1rem; border-top: 1px solid #ffffff20; max-height: calc(100dvh - 100px); overflow-y: auto; }
+  .kitchen-links li { width: 100%; }
+  .kitchen-nav .kitchen-link { width: 100%; justify-content: flex-start; padding: .85rem 1rem; font-size: 1rem; }
+  .kitchen-nav .kitchen-account { margin: .25rem 0 0; justify-content: center; }
+  .kitchen-language-item { margin: .4rem 0 0; padding: .6rem 0 0; border-inline-start: none; border-top: 1px solid #ffffff20; }
+  .kitchen-language { width: 100%; }
+  .kitchen-cart-count { margin-inline-start: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kitchen-nav a, .kitchen-nav button { transition: none; }
+}
